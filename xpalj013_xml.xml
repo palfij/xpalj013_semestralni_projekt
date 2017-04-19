@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--github link:https://github.com/palfij/xpalj013_semestralni_projekt-->
+<?xml-stylesheet type="text/xsl" href="xsl semestralka.xsl"?>
+<radio_nastaveni xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd semestralka.xsd">
+    <nazev>Vokurka</nazev>    
+    <nastaveni-radia>
+        <protokol>http</protokol>
+	<charset>utf-8</charset>
+	<jazyk>CZ</jazyk>
+	<javascript>1</javascript>
+	<nastaveni-doplnku>
+		<komentare>1</komentare>
+		<vyhledavani>1</vyhledavani>
+	</nastaveni-doplnku>
+	<omezeni-pristupu></omezeni-pristupu>	
+	<kontakt-admin>admin@radio.cz</kontakt-admin>
+    </nastaveni-radia>
+    
+    <druhy-uzivatelu>
+	<role Unazev="zdarma">
+            <reklamy>1</reklamy>
+            <volba-skladeb>0</volba-skladeb>
+            <uprava-popisu>0</uprava-popisu>
+            <pridat-favorite>0</pridat-favorite>
+            <stupen>0</stupen>
+	</role>
+	<role Unazev="zkouska">
+            <reklamy>0</reklamy>
+            <volba-skladeb>1</volba-skladeb>
+            <uprava-popisu>0</uprava-popisu>
+            <pridat-favorite>0</pridat-favorite>
+            <stupen>1</stupen>
+	</role>
+	<role Unazev="platici">
+            <reklamy>0</reklamy>
+            <volba-skladeb>1</volba-skladeb>
+            <uprava-popisu>0</uprava-popisu>
+            <pridat-favorite>1</pridat-favorite>
+            <stupen>2</stupen>
+	</role>
+        <role Unazev="administrator">
+            <reklamy>0</reklamy>
+            <volba-skladeb>1</volba-skladeb>
+            <uprava-popisu>1</uprava-popisu>
+            <pridat-favorite>1</pridat-favorite>
+            <stupen>3</stupen>
+	</role>
+    </druhy-uzivatelu>
+    
+    <styl Snazev="Rock">
+        <popis>Rádio Rock</popis>
+  		<uzivatele>
+                    <user id="ro0">
+                        <jmeno>Jan</jmeno>
+                        <prijmeni>Plech</prijmeni>
+                        <login>plechy1</login>
+                        <e-mail>plechy1@centrum.cz</e-mail>
+                        <premium-dnu>19</premium-dnu>
+                        <uroven-uctu>2</uroven-uctu>
+                    </user>
+                    <user id="ro1">
+                        <jmeno>Free</jmeno>
+                        <prijmeni></prijmeni>
+                        <login>freeuser</login>
+                        <e-mail></e-mail>
+                        <premium-dnu>0</premium-dnu>
+                        <uroven-uctu>0</uroven-uctu>
+                    </user>
+                    <user id="ro2">
+                        <jmeno>Jana</jmeno>
+                        <prijmeni>Plechá</prijmeni>
+                        <login>plecha1</login>
+                        <e-mail>plecha1@centrum.cz</e-mail>
+                        <premium-dnu>29</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+                    <user id="ro3">
+                        <jmeno>John</jmeno>
+                        <prijmeni>Walker</prijmeni>
+                        <login>walkie</login>
+                        <e-mail>walkerj@centrum.cz</e-mail>
+                        <premium-dnu>99</premium-dnu>
+                        <uroven-uctu>3</uroven-uctu>
+                    </user>
+                    <user id="ro4">
+                        <jmeno>Antonín</jmeno>
+                        <prijmeni>Vetchý</prijmeni>
+                        <login>annomolly</login>
+                        <e-mail>anomalyxd@centrum.cz</e-mail>
+                        <premium-dnu>14</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+  		</uzivatele>
+    </styl>
+    
+    <styl Snazev="Pop">
+        <popis>Rádio Pop</popis>
+  		<uzivatele>
+                    <user id="po0">
+                        <jmeno>Adam</jmeno>
+                        <prijmeni>Blecha</prijmeni>
+                        <login>Blechy1</login>
+                        <e-mail>Blechy1@centrum.cz</e-mail>
+                        <premium-dnu>1</premium-dnu>
+                        <uroven-uctu>2</uroven-uctu>
+                    </user>
+                    <user id="po1">
+                        <jmeno>Free</jmeno>
+                        <prijmeni></prijmeni>
+                        <login>freeuser</login>
+                        <e-mail></e-mail>
+                        <premium-dnu>0</premium-dnu>
+                        <uroven-uctu>0</uroven-uctu>
+                    </user>
+                    <user id="po2">
+                        <jmeno>Anna</jmeno>
+                        <prijmeni>Jistá</prijmeni>
+                        <login>ajista</login>
+                        <e-mail>jajaja1@centrum.cz</e-mail>
+                        <premium-dnu>20</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+                    <user id="po3">
+                        <jmeno>Eduard</jmeno>
+                        <prijmeni>Krok</prijmeni>
+                        <login>KrokY</login>
+                        <e-mail>krokous123@centrum.cz</e-mail>
+                        <premium-dnu>99</premium-dnu>
+                        <uroven-uctu>3</uroven-uctu>
+                    </user>
+                    <user id="po4">
+                        <jmeno>Aneta</jmeno>
+                        <prijmeni>Mdlá</prijmeni>
+                        <login>mdlovica</login>
+                        <e-mail>mldaa@centrum.cz</e-mail>
+                        <premium-dnu>10</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+  		</uzivatele>
+    </styl>
+    
+    <styl Snazev="Regae">
+        <popis>Rádio Regae</popis>
+  		<uzivatele>
+                    <user id="ra0">
+                        <jmeno>David</jmeno>
+                        <prijmeni>Konečný</prijmeni>
+                        <login>dkon9</login>
+                        <e-mail>dkon9@centrum.cz</e-mail>
+                        <premium-dnu>11</premium-dnu>
+                        <uroven-uctu>2</uroven-uctu>
+                    </user>
+                    <user id="ra1">
+                        <jmeno>Free</jmeno>
+                        <prijmeni></prijmeni>
+                        <login>freeuser</login>
+                        <e-mail></e-mail>
+                        <premium-dnu>0</premium-dnu>
+                        <uroven-uctu>0</uroven-uctu>
+                    </user>
+                    <user id="ra2">
+                        <jmeno>Jitka</jmeno>
+                        <prijmeni>Prostá</prijmeni>
+                        <login>prostoj</login>
+                        <e-mail>prostoj@centrum.cz</e-mail>
+                        <premium-dnu>9</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+                    <user id="ra3">
+                        <jmeno>Jiří</jmeno>
+                        <prijmeni>Kyblík</prijmeni>
+                        <login>cestovatel</login>
+                        <e-mail>letemsvetem@centrum.cz</e-mail>
+                        <premium-dnu>99</premium-dnu>
+                        <uroven-uctu>3</uroven-uctu>
+                    </user>
+                    <user id="ra4">
+                        <jmeno>Bender</jmeno>
+                        <prijmeni>Rodriguez</prijmeni>
+                        <login>ohýbač</login>
+                        <e-mail>benderrules@centrum.cz</e-mail>
+                        <premium-dnu>3</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+  		</uzivatele>
+    </styl>
+    
+    <styl Snazev="Jazz">
+        <popis>Rádio Jazz</popis>
+  		<uzivatele>
+                    <user id="j0">
+                        <jmeno>Tomáš</jmeno>
+                        <prijmeni>Hloupý</prijmeni>
+                        <login>hlouptom</login>
+                        <e-mail>hlouptm@centrum.cz</e-mail>
+                        <premium-dnu>7</premium-dnu>
+                        <uroven-uctu>2</uroven-uctu>
+                    </user>
+                    <user id="j1">
+                        <jmeno>Free</jmeno>
+                        <prijmeni></prijmeni>
+                        <login>freeuser</login>
+                        <e-mail></e-mail>
+                        <premium-dnu>0</premium-dnu>
+                        <uroven-uctu>0</uroven-uctu>
+                    </user>
+                    <user id="j2">
+                        <jmeno>Karolína</jmeno>
+                        <prijmeni>Smutná</prijmeni>
+                        <login>kajas</login>
+                        <e-mail>kajas123@centrum.cz</e-mail>
+                        <premium-dnu>15</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+                    <user id="j3">
+                        <jmeno>Marie</jmeno>
+                        <prijmeni>Antoaneta</prijmeni>
+                        <login>MArules</login>
+                        <e-mail>marules@centrum.cz</e-mail>
+                        <premium-dnu>99</premium-dnu>
+                        <uroven-uctu>3</uroven-uctu>
+                    </user>
+                    <user id="j4">
+                        <jmeno>Aleš</jmeno>
+                        <prijmeni>Tchýně</prijmeni>
+                        <login>tchyne5</login>
+                        <e-mail>tchyne5@centrum.cz</e-mail>
+                        <premium-dnu>4</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+  		</uzivatele>
+    </styl>
+    
+    <styl Snazev="Hip Hop">
+        <popis>Rádio Hip Hop</popis>
+  		<uzivatele>
+                    <user id="hh0">
+                        <jmeno>Vojtěch</jmeno>
+                        <prijmeni>Přijatelný</prijmeni>
+                        <login>prijatelnyv</login>
+                        <e-mail>prijatelnyv@centrum.cz</e-mail>
+                        <premium-dnu>26</premium-dnu>
+                        <uroven-uctu>2</uroven-uctu>
+                    </user>
+                    <user id="hh1">
+                        <jmeno>Free</jmeno>
+                        <prijmeni></prijmeni>
+                        <login>freeuser</login>
+                        <e-mail></e-mail>
+                        <premium-dnu>0</premium-dnu>
+                        <uroven-uctu>0</uroven-uctu>
+                    </user>
+                    <user id="hh2">
+                        <jmeno>Prokop</jmeno>
+                        <prijmeni>Buben</prijmeni>
+                        <login>PBuben</login>
+                        <e-mail>pbuben111@centrum.cz</e-mail>
+                        <premium-dnu>6</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+                    <user id="hh3">
+                        <jmeno>Jindřich</jmeno>
+                        <prijmeni>Netuší</prijmeni>
+                        <login>netusij</login>
+                        <e-mail>netusij@centrum.cz</e-mail>
+                        <premium-dnu>99</premium-dnu>
+                        <uroven-uctu>3</uroven-uctu>
+                    </user>
+                    <user id="hh4">
+                        <jmeno>Alexandr</jmeno>
+                        <prijmeni>Zlý</prijmeni>
+                        <login>alezly</login>
+                        <e-mail>alezly@centrum.cz</e-mail>
+                        <premium-dnu>12</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+  		</uzivatele>
+    </styl>
+    
+    <styl Snazev="Metal">
+        <popis>Rádio Metal</popis>
+  		<uzivatele>
+                    <user id="m0">
+                        <jmeno>Robert</jmeno>
+                        <prijmeni>Jang</prijmeni>
+                        <login>RJ66</login>
+                        <e-mail>rj66@centrum.cz</e-mail>
+                        <premium-dnu>9</premium-dnu>
+                        <uroven-uctu>2</uroven-uctu>
+                    </user>
+                    <user id="m1">
+                        <jmeno>Free</jmeno>
+                        <prijmeni></prijmeni>
+                        <login>freeuser</login>
+                        <e-mail></e-mail>
+                        <premium-dnu>0</premium-dnu>
+                        <uroven-uctu>0</uroven-uctu>
+                    </user>
+                    <user id="m2">
+                        <jmeno>Jana</jmeno>
+                        <prijmeni>Malinkatá</prijmeni>
+                        <login>vaznemala</login>
+                        <e-mail>vaznemala@centrum.cz</e-mail>
+                        <premium-dnu>25</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+                    <user id="m3">
+                        <jmeno>Eskoban</jmeno>
+                        <prijmeni>Walker</prijmeni>
+                        <login>e-walkie</login>
+                        <e-mail>e-walkie@centrum.cz</e-mail>
+                        <premium-dnu>99</premium-dnu>
+                        <uroven-uctu>3</uroven-uctu>
+                    </user>
+                    <user id="m4">
+                        <jmeno>Jakub</jmeno>
+                        <prijmeni>Zklamaný</prijmeni>
+                        <login>zklamalj</login>
+                        <e-mail>zklamalj@centrum.cz</e-mail>
+                        <premium-dnu>9</premium-dnu>
+                        <uroven-uctu>1</uroven-uctu>
+                    </user>
+  		</uzivatele>
+    </styl>
+</radio_nastaveni>

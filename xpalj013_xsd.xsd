@@ -1,0 +1,111 @@
+<!--github link:https://github.com/palfij/xpalj013_semestralni_projekt-->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="radio_nastaveni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="nazev"/>
+        <xs:element name="nastaveni-radia">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="protocols" name="protokol"/>
+              <xs:element type="charsets" name="charset"/>
+              <xs:element type="languages" name="jazyk"/>
+              <xs:element type="onandoff" name="javascript"/>
+              <xs:element name="nastaveni-doplnku">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="onandoff" name="komentare"/>
+                    <xs:element type="onandoff" name="vyhledavani"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="omezeni-pristupu"/>
+              <xs:element type="xs:string" name="kontakt-admin"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="druhy-uzivatelu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="role" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="onandoff" name="reklamy"/>
+                    <xs:element type="onandoff" name="volba-skladeb"/>
+                    <xs:element type="onandoff" name="uprava-popisu"/>
+                    <xs:element type="onandoff" name="pridat-favorite"/>
+                    <xs:element type="level" name="stupen"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="Unazev" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="styl" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="textblock" name="popis"/>
+              <xs:element name="uzivatele">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="user" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="jmeno"/>
+                          <xs:element type="xs:string" name="prijmeni"/>
+                          <xs:element type="xs:string" name="login"/>
+                          <xs:element type="xs:string" name="e-mail"/>
+                          <xs:element type="xs:byte" name="premium-dnu"/>
+                          <xs:element type="level" name="uroven-uctu"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="Snazev" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="textblock">
+    <xs:restriction base="xs:string">
+    	<xs:minLength value="0"/>
+      	<xs:maxLength value="80"/>
+    </xs:restriction>
+  </xs:simpleType> 
+  <xs:simpleType name="onandoff">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="1"/>
+    </xs:restriction>
+  </xs:simpleType> 
+    <xs:simpleType name="level">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="3"/>
+    </xs:restriction>
+  </xs:simpleType> 
+  <xs:simpleType name="charsets">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="utf-8"/>
+      <xs:enumeration value="windows-1258"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="languages">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CZ"/>
+      <xs:enumeration value="US"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="protocols">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="http"/>
+      <xs:enumeration value="https"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

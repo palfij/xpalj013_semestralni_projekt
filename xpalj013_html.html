@@ -1,0 +1,247 @@
+<!--github link:https://github.com/palfij/xpalj013_semestralni_projekt-->
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="Author" content="Jakub Pálfi">
+        <title>Dokumentace - Rádio</title>     
+    </head>
+    <body>
+        <h1>Dokumentace - Rádio</h1>
+        <nav>
+            <h2>Navigace:</h2>
+            <ul>
+                <li><a href="#uvod">Úvod</a></li>
+                <li><a href="#metodika">Metodika</a></li>
+                <li><a href="#elementy">Popis elementů</a></li>
+                <li><a href="#atributy">Popis atributů</a></li>
+                <li><a href="#transformace">Popis transformace</a></li>
+                <li><a href="#zaver">Závěr</a></li>
+            </ul>
+        </nav>
+        <hr />
+        <main>
+            <section id="uvod">
+                <article>
+                    <header>
+                        <h2>Úvod</h2>
+                    </header>          
+                    <p>Pro tento semestrální projekt jsem si vybral neexistující Online Rádio. Zvolil jsem si ho z toho důvodu, že sám rád poslouchám muziku a mám rád možnost využití poslechu online.</p>
+                    <p>XML soubor zde slouží k nastavení online aplikace, práv jednotlivých uživatelů podle jejich úrovně (například platící zákazníci budou mít více možností
+                        než uživatel co poslouchá zdarma), a také k nastavení jednotlivých sekcí (stylů) rádia.</p> 
+                </article>
+            </section>
+            <section id="metodika">
+                <article>
+                    <header>
+                        <h2>Metodika</h2>
+                    </header>
+                        <p>Při tvorbě tohoto programu jsem používal program NetBeans IDE 8.2 a internetový prohlížeč Google Chrome.</p>     
+                </article>
+            </section>
+            <section id="elementy" >
+                <article>
+                    <header>
+                        <h2>Popis elementů</h2>
+                    </header>
+                    <table border="1" title="Popis elementů">
+                        <tr>
+                            <td>Název elementu</td>
+                            <td>Popis elementu</td>
+                            <td>Schématické omezení</td>
+                        </tr>
+                        <tr>                       
+                            <td>radio_nastaveni</td>
+                            <td>Zaobaluje nastavení aplikace.</td>
+                            <td>Obal - bez omezení.</td>
+                        </tr>
+                        <tr>                       
+                            <td>nazev</td>
+                            <td>Určuje název rádia.</td>
+                            <td>String omezení.</td>
+                        </tr>
+                        <tr>                       
+                            <td>nastaveni-radia</td>
+                            <td>Zaobaluje obecné nastavení.</td>
+                            <td>Obal - bez omezení.</td>
+                        </tr>
+                        <tr>                       
+                            <td>protokol</td>
+                            <td>Určuje jaký protokol bude použit pro zobrazení stránky.</td>
+                            <td>Protokol http, nebo https.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>charset</td>
+                            <td>Určuje jaký charset bude používán.</td>
+                            <td>Charset utf-8, nebo windows-1258.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>jazyk</td>
+                            <td>Určuje národostní jazyk aplikace.</td>
+                            <td>Jazyk český, nebo americká angličtina.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>javascript</td>
+                            <td>Určuje zda bude povolený javascript.</td>
+                            <td>Hodnoty 0,1.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>nastaveni-doplnku</td>
+                            <td>Zaobaluje nastavení použitých doplňků.</td>
+                            <td>Obal - bez omezení.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>komentare</td>
+                            <td>Určuje zda bude povolen doplněk komentářů.</td>
+                            <td>Hodnoty 0,1.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>vyhledavani</td>
+                            <td>Určuje zda bude povolen doplněk vyhledávání.</td>
+                            <td>Hodnoty 0,1.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>omezeni-pristupu</td>
+                            <td>Blacklist IP adres se zakázaným přístupem.</td>
+                            <td>String omezení.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>kontakt-admin</td>
+                            <td>Kontaktní e-mail na správce.</td>
+                            <td>String omezení.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>druhy-uzivatelu</td>
+                            <td>Zaobaluje nastavení pravomocí uživatelů.</td>
+                            <td>Obal - bez omezení.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>role</td>
+                            <td>Zaobaluje jednotlivé pravomoce a identifikuje je podle atributu Unazev.</td>
+                            <td>Obal - bez omezení.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>reklamy</td>
+                            <td>Určuje zda uživatel bude mít při poslechu zobrazené reklamy.</td>
+                            <td>Hodnoty 0,1.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>volba-skladeb</td>
+                            <td>Určuje zda uživatel může měnit skladby.</td>
+                            <td>Hodnoty 0,1.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>uprava-popisu</td>
+                            <td>Určuje zda uživatel může měnit popis skladeb.</td>
+                            <td>Hodnoty 0,1.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>pridat-favorite</td>
+                            <td>Určuje zda uživatel může přidat skladbu do jeho favoritů.</td>
+                            <td>Hodnoty 0,1.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>stupen</td>
+                            <td>Určuje míru jeho možností manipulace/oprávnění.</td>
+                            <td>Hodnoty 0,1,2,3.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>styl</td>
+                            <td>Zaobaluje jednotlivé styly.</td>
+                            <td>Obal - bez omezení.</td>
+                        </tr> 
+			<tr>                       
+                            <td>popis</td>
+                            <td>Popisuje danou sekci.</td>
+                            <td>Popis o 0 až 80 charakterech.</td>
+                        </tr> 
+                        <tr>
+                            <td>uzivatele</td>
+                            <td>Zaobaluje nastavení uživatelských oprávnění pro danou sekci.</td>
+                            <td>Obal - bez omezení.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>user</td>
+                            <td>Zaobaluje nastavení jednodtlivých uživatelů v této sekci, identifikuje uživatele podle id.</td>
+                            <td>Obal - bez omezení.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>jmeno</td>
+                            <td>Určuje jméno uživatele.</td>
+                            <td>String omezení.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>prijmeni</td>
+                            <td>Určuje příjmení uživatele.</td>
+                            <td>String omezení.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>login</td>
+                            <td>Určuje login uživatele.</td>
+                            <td>String omezení.</td>
+                        </tr>
+                        <tr>                       
+                            <td>e-mail</td>
+                            <td>Určuje e-mail uživatele.</td>
+                            <td>String omezení.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>premium-dnu</td>
+                            <td>Určuje kolik uživateli zbývá prémium dnů.</td>
+                            <td>Bytové omezení.</td>
+                        </tr> 
+                        <tr>                       
+                            <td>uroven-uctu</td>
+                            <td>Určuje uživatelovu míru jeho možností manipulace/oprávnění.</td>
+                            <td>Hodnoty 0,1,2,3.</td>
+                        </tr>                         
+                    </table>
+                </article>
+            </section>
+            <section id="atributy" >
+                <article>
+                    <header>
+                        <h2>Popis atributů</h2>
+                    </header>
+                    <table border="1" title="Popis atributů">
+                        <tr>
+                            <td>Název atributu</td>
+                            <td>Popis atributu</td>
+                        </tr>
+                        <tr>                       
+                            <td>Unazev</td>
+                            <td>Určuje název druhu uživatele.</td>
+                        </tr>
+                        <tr>                       
+                            <td>id</td>
+                            <td>Určuje identfikátor uživatele.</td>
+                        </tr>
+                        <tr>                       
+                            <td>Snazev</td>
+                            <td>Určuje název stylu (sekce).</td>
+                        </tr>                      
+                    </table>
+                </article>
+            </section>
+            <section id="transformace">
+                <article>
+                    <header>
+                        <h2>Popis transformace</h2>
+                    </header>
+                    <p>Transformace probíhá pomocí cyklu for-each a JSON, který vybere uživatele a jejich údaje, kterým zbývá 10 a více prémium dní, seřadí je vzestupně podle příjmení a pomocí testu zjistí, pokud se jedná o poslední údaj, případně doplní čárku.</p>
+                </article>
+            </section>
+            <section id="zaver">
+                <article>
+                    <header>
+                        <h2>Závěr</h2>
+                    </header>
+                    <p>Díky této práci jsem si vyzkoušel tvorbu schématu pro XML, jazyk XML a transformaci do JSON, čehož doufám v budoucnosti i využiji.</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Autor: Jakub Pálfi (xpalj013) | ČZU Praha, 2017</p>
+        </footer>
+    </body>
+</html>
